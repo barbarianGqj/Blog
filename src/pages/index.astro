@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css';
 
 
@@ -15,11 +17,12 @@ const pageTitle = "首页"
 		<title>{pageTitle}</title>
 	</head>
 
-	<a href="/">{pageTitle}</a>
-    <a href="/about/">关于</a>
-	<a href="/blog/">博客</a>
+
 	
-	<body>
+	<body>    
+		<Header />
+
 		<h1>我的 Astro 站点</h1>
+		<Footer />
 	</body>
 </html>
